@@ -1,0 +1,154 @@
+/*Paletas de colores*/
+:root{
+  
+--color-background1: var(rgb(204, 255, 238));
+--color-background2: var(#99ffdd);
+--color-background3: var(#00ffaa);
+--color-background4: var(#00cc88);
+--nav-bar:var(#00997a);
+--darker-green:var(#537979);
+--text-color: var(black);
+  --text-color2:var(white);
+} 
+/*Variable de paleta de colores*/
+/*Paletas de colores gradiant*/
+:root{
+    --secondary-background: var(#F5F4F4);
+    --theme-color: var(#3E6898);
+    --menu-background: var(#8998E1);
+    --icon-color: var(#8E76B7);
+    --footer-color: var(#3511740);
+   
+}
+/*Box Shadow*/
+a{box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+
+}
+/*Java Script*/
+/*const btn_hamburguesa = document.querySelector('#btn-hamburguesa')
+const menu_hamburguesa = document.querySelector('.lado-der')
+ 
+ btn_hamburguesa.addEventListener('click' , (e) =>{
+    menu_hamburguesa.classList.toggle('btn-visible')
+
+ })
+ *--------*
+var btn1 = document.querySelector ('.btn1');
+var Caja = document.createElement ("div");
+var body = document.querySelector ('body');
+var Cajita = document.createElement("div");
+
+btn1.addEventListener ('click', (e) => {
+    body.appendChild (Caja);
+    Caja.className = 'Caja';
+    Caja.appendChild (Cajita);
+    Cajita.className = 'Cajita';
+})
+
+
+
+
+
+
+
+
+
+/*Transitions*/
+.precio1:hover {
+  animation: animacion-tarjetas 1s ease 0s 1 normal forwards;
+}
+@keyframes animacion-tarjetas {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      transform: scale(1);
+      
+    }
+  
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      transform: scale(103%);
+      filter: blur(0px);
+    }
+  }
+
+
+
+/*For boxshadows*/
+
+
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+body {background:#ccc}
+
+.box h3{
+  text-align:center;
+  position:relative;
+  top:80px;
+}
+.box {
+  height:200px;
+  background:#FFF;
+  
+}
+
+/*==================================================
+ * Effect of rotation
+ * ===============================================*/
+.effect4
+{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);}

@@ -1,0 +1,234 @@
+html, body,ul,li,a{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-principal{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #87e4cd 13%, #ccffff 74%);
+    display: flex;
+    
+}
+.lado-izq{
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.lado-der{
+width: 70%;
+display: flex;
+padding-right: 10px;
+justify-content: flex-end;
+align-items: center;
+}
+.header-principal{
+    background-color: var(#99ffdd);
+    padding-top: 5px;
+    width: 100%;
+    height: 400PX;
+    display: flex;
+}
+.contenedor_buscador{
+    width: 100%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+.title{background-color: transparent;
+    width: 50%;
+    display: flex;
+    justify-content: center ;
+
+}
+.buscador-principal{background-color: transparent;
+display: flex;
+width:50%;
+height:35px;
+justify-content: center;
+
+}
+.parrafo-item{
+    background-color: rgba(117, 248, 209, 0.808);
+    display: flex ;
+    display: flex ;
+    width:45%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
+   
+}
+/*amimación de aparecimiento*/
+.parrafo-item:hover {
+    animation: animacion-tarjetas 1s ease 0s 1 normal forwards;
+}
+/*box shadow*/
+.icons-items{
+    max-width: 100%;
+    height: 90px;
+    background-color: #749797;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 40%;
+    display: flex ;
+    flex-direction: row;
+    box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5px;
+   
+}
+.icons-items ul {
+    width:100%;
+    cursor: pointer;
+
+}
+
+.underline_tabs{
+    color: #000000;
+}
+.underline_tabs {
+    display: block;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-top: 0;
+    letter-spacing: .4px;
+    margin-bottom: 0;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1.25rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10%;
+}
+.underline_tabs:hover{
+    transform: scale(101%);}
+.underline_tabs::after{
+    opacity:1 ;
+}
+.underline_tabs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease;
+    transition: .2s opacity ease;
+}
+.underline_tabs{
+    background-color: aquamarine;
+}
+.underline_tabs::after{
+    height: 0.15rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+}
+.container_with_background{width: 100%;
+    background: linear-gradient(to top, #00cc99 12%, #ccffff 60%);
+    display: flex;
+    padding-top: -5px;
+
+
+
+}
+.girl_working{ 
+    background-image: url(/img/pill-image.jpg);
+    background-size: cover;
+width: 500px;
+height: 333px;
+border-radius: 15%;
+opacity: 0.8;
+transition: 0.3;
+}
+.girl_working:hover{
+opacity: 1;
+transform: scale(102%);
+}
+.container_text{background-color: transparent;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.parrafo_1{background-color: transparent;
+    display: flex;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Inconsolata', monospace;
+}
+.parrafo_2{
+    display: flex;
+    width: 45%;
+   
+}
+.icons_social_net {
+    display: flex;
+    justify-content: center;
+}
+.icons_social_net ul {
+    width: 100%; 
+    display: flex;
+ justify-content: space-evenly;
+}
+.icons_social_net ul i{font-size: 40px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icons_social_net ul i:hover{font-size: 40px;
+   color: rgb(85, 85, 148);
+}
+
+.container_boxes{background-color: #99ffdd;
+    width: 100%;
+    height: 210PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text_title{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text_medicine{
+    background-color: #99ffdd;
+    width: 100%;
+    display: flex;
+
+}
+.contact_button{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#contactenos{
+    background-color: thistle;
+    display: flex;
+}
+@keyframes animacion-tarjetas {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      transform: scale(1);
+      
+    }
+  
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      transform: scale(103%);
+      filter: blur(0px);
+    }
+  }
+
+
+
+
