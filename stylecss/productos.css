@@ -1,144 +1,189 @@
-html, body,ul,li,a{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    outline: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-.nav-principal{
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom, #87e4cd 13%, #ccffff 74%);
-    display: flex;
-   
-    
-}
-.lado-izq{
-width: 30%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.lado-der{
-width: 70%;
-display: flex;
-padding-right: 10px;
-justify-content: flex-end;
-align-items: center;
-}
-.header-principal{
-    background-color: var(#99ffdd);
-    padding-top: 5px;
-    width: 100%;
-    height: 400PX;
-    display: flex;
-}
-.contenedor_buscador{
-    width: 100%;
-    display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-}
-.title{background-color: transparent;
-    width: 50%;
-    display: flex;
-    justify-content: center ;
 
-}
-.buscador-principal{background-color: transparent;
-display: flex;
-width:50%;
-height:35px;
-justify-content: center;
 
-}
-.parrafo-item{
-    background-color: rgba(117, 248, 209, 0.808);
-    display: flex ;
-    display: flex ;
-    width:45%;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
-   
-}
-/*amimación de aparecimiento*/
-.parrafo-item:hover {
-    animation: animacion-tarjetas 1s ease 0s 1 normal forwards;
-}
-/*box shadow*/
-.icons-items{
-    max-width: 100%;
-    height: 90px;
-    background-color: #749797;
-    padding-top: 5px;
-    padding-bottom:5px;
-    padding-left: 40%;
-    display: flex ;
-    flex-direction: row;
-    box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
-    margin-bottom: 5px;
-   
-}
-.icons-items ul {
-    width:100%;
-    cursor: pointer;
-
-}
-
-.underline_tabs{
-    color: #000000;
-}
-.underline_tabs {
-    display: block;
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 600;
-    margin-top: 0;
-    letter-spacing: .4px;
-    margin-bottom: 0;
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-align: center;
+:root{
+    --color-background1: rgb(204, 255, 238);
+    --color-background2: #99ffdd;
+    --color-background3: #00ffaa;
+    --color-background4: #00cc88;
+    --nav-bar: #00997a;
+    --darker-green: #537979;
+    --text-color: black;
+    --text-color2:white;
+    --secondary-background: #F5F4F4;
+    --theme-color: #3E6898;
+    --menu-background: #8998E1;
+    --icon-color: #8E76B7;
+    --footer-color: #351174;
+    } 
+body{
+    font-family: 'Montserrat', sans-serif;}
+    .topheader {
+        box-shadow: 0 4px 5px var(--secondary-background);
+        position: fixed;
+        background-color: var(--menu-background);
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      
+      .topnav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      
+      /* Logo */
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--menu-background);
+      }
+      
+      .logo img {
+        border-radius: 50%;
+      }
+      
+      /* Menu */
+      .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li {
+        padding: 0 15px;
+      }
+      
+      .menu a  {
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 50px;
+        text-transform: uppercase;
+        position: relative;
+        
+      }
+      .menu a::after{
+        content: "";
+        background-color: bisque;
+        border-radius: 20%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 5px;
+        opacity: 0;
+      }
+      .menu a.selected::after,
+      .menu a:hover::after{
+      opacity: 0.8;
+      transition: 0.8s;
+      }
+      .menu a:hover{
+        color: var(--color-background2);
+      }
+      .open-menu,
+      .close-menu {
+        display: none;
+      }
+      
+      @media (max-width: 950px) {
+        /* Menu */
+        .menu {
+          flex-direction: column;
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          align-items: center;
+          background-color: var(--darker-green);
+          height: 100%;
+          overflow-y: auto;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.3s;
+        }
+        .menu li {
+          padding: 0;
+        }
+        .menu a {
+         color: var(--secondary-background);
+          line-height: 60px;
+        }
+        .open-menu,
+        .close-menu {
+          display: block;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+        .close-menu {
+          align-self: flex-end;
+          padding: 20px 15px;
+        }  .menu_opened {
+          opacity: 1;
+          pointer-events: all;
+        }
+        .open-menu:focus:not(:focus-visible),
+        .close-menu:focus:not(:focus-visible) {
+          outline: none;
+        }
+      }
+      .contenedor{width: 100%;
+        height: 4000px;
+        background-color: beige;
+      }
+      .header-principal{
+        background-image: linear-gradient(var(--color-background2), var(--darker-green));
+        padding-top: 5px;
+        width: 100%;
+        height: 400PX;
+        display: flex;
+    }
+    .contenedor_buscador{
+        width: 100%;
+        display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10%;
-}
-.underline_tabs:hover{
-    transform: scale(101%);}
-.underline_tabs::after{
-    opacity:1 ;
-}
-.underline_tabs::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: .2s opacity ease;
-    transition: .2s opacity ease;
-}
-.underline_tabs{
-    background-color: aquamarine;
-}
-.underline_tabs::after{
-    height: 0.15rem;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-}
+    justify-content: space-evenly;
+    }
+    .title{background-color: transparent;
+        width: 100%;
+        color: #3E6898;
+        font-size:25px;
+        display: flex;
+        justify-content: center ;
+    }
+    .buscador-principal{background-color: transparent;
+    display: flex;
+    width:50%;
+    height:35px;
+    justify-content: center;
+    
+    }
+    .parrafo-item{
+        background-color:--;
+        display: flex ;
+        width:45%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; ;
+       
+    }
+    /*amimación de aparecimiento*/
+    .parrafo-item:hover {
+        animation: animacion-tarjetas 1s ease 0s 1 normal forwards;
+    }
+
 .container_with_background{width: 100%;
     background: linear-gradient(to top, #00cc99 12%, #ccffff 60%);
     display: flex;
 
-
-
-}
-.girl_working{
-width: 500px;
-height: 333px;
 }
 .container_text{background-color: transparent;
     width: 45%;
@@ -146,60 +191,421 @@ height: 333px;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.parrafo_1{background-color: transparent;
-    display: flex;
-    font-family: 'Comforter Brush', cursive;
-    font-family: 'Inconsolata', monospace;
+.containerpills{
+max-width: 100%;
+height: 310px;  
+background-color: transparent;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
 }
-.parrafo_2{
-    display: flex;
-    width: 45%;
-}
-.icons_social_net {
-    display: flex;
+.ficha_1{
+  display: flex;
+  background-color:#87e4cd;
+  background-size: cover;
+   width: 25%;
+   height: 170px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+    background-image: url(https://www.puntofarma.com.py/imagenes/public/images/oferta-principal-1-10625.jpg);
+    align-items: flex-end;
     justify-content: center;
 }
-.icons_social_net ul {
-    width: 100%; 
-    display: flex;
- justify-content: space-evenly;
+.ficha_1 button{text-align: center;
+font-size: 24px;
+background-color: transparent;
+color: white;
+border-radius: 15px;
+border: 4px solid var(--darker-green); 
+box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+cursor: pointer;
 }
-.icons_social_net ul i{
-    display: flex;
-    cursor: pointer;
+.ficha_1:hover {
+  animation: myAnim 2s ease 0s 1 normal forwards;}
+#ficha1{
+  background-image: url(https://www.puntofarma.com.py/imagenes/public/images/Oferta-Principal-2-10524-web.jpg);
+} 
+.ficha_2{display: flex;
+    background-color: #77acac;
+    width: 25%;
+    height: 150px;
+    font-weight: 500;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+    background-image: url(/img1/undraw_doctor_kw-5-l.svg);
+    background-size: cover;
 }
-.container_boxes{background-color: wheat;
-    width: 100%;
-    height: 210PX;
+.ficha_2:hover {
+    animation: animacion-tarjetas 1s ease 0s 1 normal forwards;}
+
+
+
+.titulodeldescuento{
+  font-size: 23px;
+  color: gray;
+  margin-left:70px;
+}
+.container3{
+ margin-top: 50px;
+ width: 100%;
+ height: 120px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.box1{
+width: 13%;
+margin-left: 50px;
+background-color: rgb(102, 36, 131);
+border-radius: 10px;
+font-size: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+height: 90px;
+}
+.box2{
+  width: 13%;
+  margin-left: 50px;
+  background-color:rgb(0, 48, 209);
+  border-radius: 10px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 102, 0);
+  height: 90px;
+ 
+  }
+  .box3{
+    width: 13%;
+    margin-left: 50px;
+    height: 90px;
+    background-color:rgb(255, 102, 0);
+    border-radius: 10px;
+    font-size: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+   
+    }
+    .box4{
+      width: 13%;
+      margin-left: 50px;
+      height: 90px;
+      background-color:rgb(89, 178, 16);
+      border-radius: 10px;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      
+      }
+      .box5{
+        width: 13%;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 90px;
+        background-color:rgb(0, 154, 255);
+        border-radius: 10px;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+        }
+ .container4{
+ width: 100%;
+height: 300px;
+display: flex;
+ flex-direction: row;
+justify-content: center;
+        }
+        .imagen1{
+          width: 20%;
+          border-radius: 10px;
+          margin-left: 50px;
+          background-image: url(/img1/Oferta-Secundaria-4-10629.jpg);
+          background-size: cover;
+          height: 200px;
+        }
+        .imagen2{
+          width: 20%;
+          border-radius: 10px;
+          margin-left: 50px;
+          background-image: url(https://www.puntofarma.com.py/imagenes/public/images/Oferta-Secundaria-1-10525-web.jpg);
+          background-size: cover;
+          height: 200px;
+        }
+        .imagen3{
+          width: 20%;
+          border-radius: 10px;
+          margin-left: 50px;
+          background-image: url(https://www.puntofarma.com.py/imagenes/public/images/Oferta-Secundaria-2-10627-web.jpg);
+          background-size: cover;
+          height: 200px;
+        }
+        .imagen4{
+          width: 20%;
+          border-radius: 10px;
+          margin-left: 50px;
+          margin-right: 50px;
+          background-image: url(https://www.puntofarma.com.py/imagenes/public/images/Oferta-Secundaria-3-10628-web.jpg);
+          background-size: cover;
+          height: 200px;
+        }
+
+        /*footer*/
+footer {
+  width: 100%;
+    background-image: linear-gradient(var(--darker-green), var(--color-background2)); 
+    color: var(--footer-color)
 }
-.text_title{
-    background-color: var(--color-background1--);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.text_medicine{
-    background-color: tomato;
-    width: 100%;
-    display: flex;
+.container-body{ 
+ width: 100%;
+ height: 350px;
+ display: flex;
+flex-direction: row;
 
 }
-.contact_button{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.column1{
+ width: 33%;
+ padding-top: 30px;
+ padding-left: 40px;
+
+}
+.column1 h3{
+    font-size: 22px;
    
-}
-#contactenos{
-    background-color: thistle;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+.column1 p{
+    width: 80%;
+color:black;
+font-size: 14px;
+
+}
+.column2{
+width: 33%;
+padding-top: 30px;
+
+}
+.column2 h3{
+  font-size: 22px;
+}
+.row{
+  margin-top: 20px;
+display: flex;
+font-size: 25px;
+text-decoration: none;
+}
+.row:hover{transform: scale(105%);
+color: var(--nav-bar);}
+.row label{
+    margin-left: 10px;
+}
+.column3{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column3 h3{
+    padding-top: 30px;
+    width: 100%;
+  font-size: 22px;
+}
+.icon_home{
+    width: 90%;
+    height: 70px;
+    font-size: 15px;
+    margin-top: -60px;
+}
+.icon_home img{
+  width: 40px;
+  height: 36px;
+}
+
+.icon_mail{
+    width: 90%;
+    height: 70px;
+    font-size: 15px;
+    margin-top: -45px;
+}
+.icon_mail img{
+  width: 40px;
+  height: 40px;
+}
+.icon_cell{
+    width: 90%;
+    height: 70px;
+    font-size: 15px;
+    margin-top: -45px;
+}
+.icon_cell img{
+  width: 36px;
+  height: 36px;
+}
+
+/*Pie pág*/
+.container-footer{
+    width: 100%;
+   padding: 5px;
+background-color: var(--menu-background);
+display: flex;
+flex-wrap: nowrap;
+}
+
+p{
+  color: var(--secondary-background);
+  padding-left: 8px;
+  padding-top: 12px;
+}
+.shopcontainer{background-color: var(--color-background4);
+  display: flex;
+ max-width:100%;
+  height: 500px;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.shop1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.66%;
+  height: 270px;
+background-color: white;
+border-radius: 15px;
+box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+}
+.shop1 p{display: flex;
+  background-color: var(--color-background2);
+  width: 219px;
+  height: 30px;
+ border-radius: 15px;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.shop1 p:hover{transform: scale(104%);
+}
+.img1{
+  background-image: url(/img1/clear.jpg);
+  width: 224px;
+  height: 197px;
+  border-radius: 15px;
+}
+.shop2{display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.66%;
+  height: 270px;
+  background-color: white;
+border-radius: 15px;
+box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+}
+.shop2 p{display: flex;
+  background-color: var(--color-background2);
+  width: 219px;
+  height: 30px;
+ border-radius: 15px;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.shop2 p:hover{transform: scale(104%);
+}
+.img2{
+  background-image: url(/img1/Huggies.jpg);
+  width: 224px;
+  height: 197px;
+  border-radius: 15px;
+
+}
+.shop3{display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.66%;
+  height: 270px;
+background-color: white;
+border-radius: 15px;
+box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
+}
+.shop3 p{display: flex;
+  background-color: var(--color-background2);
+  width: 219px;
+  height: 30px;
+ border-radius: 15px;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.shop3 p:hover{transform: scale(104%);
+}
+.img3{
+  background-image: url(/img1/Gel.jpg);
+  width: 224px;
+  height: 197px;
+  border-radius: 15px;
+}
+
+
+/*Movement-shake*/
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(48px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 @keyframes animacion-tarjetas {
     0% {
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);

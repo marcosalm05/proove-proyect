@@ -1,24 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/stylecss/productos.css" type="text/css" >
-    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Inconsolata:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Inconsolata:wght@600&display=swap" rel="stylesheet"><!--Fuente de google para parrafo_1-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 </head>
 <body>
-    <nav class="nav-principal">
-    <div class="lado-izq">
-      <h1>Ícono</h1>
-    </div>
-    <div class="lado-der">
-  <i class="fas fa-bars"></i>
-    </div>
+    <header class="topheader">
+        <nav class="topnav">
+          <a href="#" class="logo">
+            <img
+              height="50"
+              width="50"
+              src="img1/Image_icon.jpg"
+              alt="programador"
+            />
+            <br class="logotype">
+             Farmacia Virgen de Luján</br>
+            </div>
+          </a>
+          <button class="open-menu" aria-label="Abrir menú">
+            <img src="img1/hamburger-icon.svg" alt="abrir menú" />
+          </button>
+          <ul class="menu">
+            <button class="close-menu" aria-label="Cerrar menú">
+              <img src="img1/close-icon.svg" alt="cerrar menú" />
+            </button>
+            <li><a  href="/index.html" class="selected">Inicio
+              
+            </a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+          </ul>
+        </nav>
+      </header>
 </nav>
 <header class="header-principal">
 <div class="contenedor_buscador">
@@ -32,24 +59,107 @@
 <button>Search</button>
 </div>
 <div class="parrafo-item">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    <p>Farmacia V le ayuda con sus metas de ejercicio para gozar de una buena salud</p>
 </div>
 
 </header>
-<div>
-        <ul class="icons-items">
-            <a class="underline_tabs" href="/index.html">Inicio </a>
-            <a class="underline_tabs" href="/productos.html">Productos</a>
-            <a class="underline_tabs" href="servicios.html">Servicios</a>
-        </ul>
-   </div> 
 
+   <div class="containerpills">
+<div class="ficha_1">
+<button>Comprar ahora</button></div>
+<div class="ficha_2"></div>
+<div class="ficha_1" id="ficha1"><button>Comprar ahora</button></div>
+   </div>
 
+<div class="titulodeldescuento"> 
+  <h4>NUESTROS DESCUENTOS</h4>
+</div>
+<section class="container3">
+  <div class="box1">
+    <p>60%</p>
+  </div>
+  <div class="box2">
+    <p>50%</p>
+  </div>
+  <div class="box3">
+    <p>40%</p>
+  </div>
+  <div class="box4">
+    <p>30%</p>
+  </div>
+  <div class="box5">
+    <p>20%</p>
+  </div>
+  
+</section>
+<section class="container4">
+    <div class="imagen1">
+    </div>
+    <div class="imagen2">
+    </div>
+    <div class="imagen3">
+    </div>
+    <div class="imagen4">
+    </div>
+</section>
+<section class="shopcontainer">
+<div class="shop1"><div class="img1"></div>
+<p>Comprar Ahora</p></div>
+<div class="shop2"><div class="img2"></div><p>Comprar Ahora</p></div>
+<div class="shop3"><div class="img3"></div><p>Comprar Ahora</p></div>
+</section>
+<footer >
+  <div class="container-body">
+    <div class="column1">
+        <h3>Más información de la compañía</h3>
+        <p>Ofrecer una amplia variedad de productos y servicios farmacéuticos orientados al cuidado de la salud de nuestros clientes y de sus familias, a través de nuestra red de sucursales, brindando un excelente servicio a través de colaboradores altamente capacitados y comprometidos con la empresa.
+        </p>
+    </div>
+    
+    <div class="column2">
+    <h3>Redes sociales</h3>
+    <div class="row">
+      <a class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
+      <label>Siguenos en Facebook</label>
+    </div>
+    <div class="row">
+      <a class="fab fa-whatsapp" href="https://wa.link/awqifn"></a>
+      <label>Contactenos</label>
+    
+    </div>
+    <div class="row">
+      <a class="fab fa-instagram" href="https://www.instagram.com/"></a>
+      <label>Siguenos en Instagram</label>
+    </div>
+    </div>
+    
+    <div class="column3">
+      <h3>Información Contacto</h3>
+    <div class="icon_home">
+      <img src="/img1/home-solid.svg" ><label>Nos puedes encontrar sobre la
+        Avenida Monseñor Rodriguez, Cd. del Este, Paraguay
+      </label>
+    </div>
+    <div class="icon_mail">
+      <img src="/img1/mail_icon.svg"> <label> vidal_fvl@hotmail.com</label>
+    </div>
+    <div class="icon_cell">
+      <img src="/img1/mobile-alt-solid.svg" ><label>+595 975 609167</label>
+    </div>
+    </div>
+    </div>
+    <div class="container-footer">
+    <div class="copy-right"> Copyright © Todos los derechos reservados | <a href="">Marcos A.</a></div>
+    <div class="Information">
+      <a href="">Información |</a>
+      <a href="">Privación y política |</a>
+      <a href="">Terminos y condiciones |</a>
+    </div>
+    </div>
 
+</footer>
 </body>
-
 <script src="https://kit.fontawesome.com/8b3c44ad31.js" crossorigin="anonymous"></script>
 <script src="/JavaScript/JavaProductos.js" type="text/javascript"></script>
-
 </script>
 </html>
