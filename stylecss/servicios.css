@@ -297,13 +297,13 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width:100%;
-  background-image: url(/img1/undraw_science_re_mnnr.svg);
+  background-image: url(img1/undraw_science_re_mnnr.svg);
   background-size: contain;
   counter-increment: item;
 }
 
 .carousel__slide:nth-child(even) {
- background-image: url(/img1/undraw_web_devices_re_m8sc.svg);
+ background-image: url(img1/undraw_web_devices_re_m8sc.svg);
  background-size: cover;
 }
 
