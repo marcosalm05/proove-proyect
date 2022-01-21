@@ -233,7 +233,7 @@ cursor: pointer;
     font-weight: 500;
     border-radius: 15px;
     box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
-    background-image: url(/img1/undraw_doctor_kw-5-l.svg);
+    background-image: url(img1/undraw_doctor_kw-5-l.svg);
     background-size: cover;
 }
 .ficha_2:hover {
@@ -330,7 +330,7 @@ justify-content: center;
           width: 20%;
           border-radius: 10px;
           margin-left: 50px;
-          background-image: url(/img1/Oferta-Secundaria-4-10629.jpg);
+          background-image: url(img1/Oferta-Secundaria-4-10629.jpg);
           background-size: cover;
           height: 200px;
         }
@@ -498,7 +498,7 @@ box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
 .shop1 p:hover{transform: scale(104%);
 }
 .img1{
-  background-image: url(/img1/clear.jpg);
+  background-image: url(img1/clear.jpg);
   width: 224px;
   height: 197px;
   border-radius: 15px;
@@ -524,7 +524,7 @@ box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
 .shop2 p:hover{transform: scale(104%);
 }
 .img2{
-  background-image: url(/img1/Huggies.jpg);
+  background-image: url(img1/Huggies.jpg);
   width: 224px;
   height: 197px;
   border-radius: 15px;
@@ -551,7 +551,7 @@ box-shadow: rgba(0, 0.25, 0, 0.24) 0px 3px 8px;
 .shop3 p:hover{transform: scale(104%);
 }
 .img3{
-  background-image: url(/img1/Gel.jpg);
+  background-image: url(img1/Gel.jpg);
   width: 224px;
   height: 197px;
   border-radius: 15px;
